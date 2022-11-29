@@ -9,6 +9,15 @@ Later on we might want to use [hybrid rendering](https://nuxt.com/docs/guide/con
 Integrated [vue-i18n](https://vue-i18n.intlify.dev/) through a plugin since the Nuxt 3 module is still under development.
 Linked it with `useHead()` to set the correct `lang` and `dir` attributes on the `<html>` element.
 
+## Demo
+
+- [Running on Render.com](https://nuxt3stable-with-nord-without-ssr.onrender.com/) (Node.js server)
+  - Expect a response delay of up to 30 seconds for the first request that comes in after a period of inactivity because I’m on the free plan.
+- The dashboard and settings navigation items are interactive.
+- The settings page input values are retrieved through a Nuxt API route, everything else is static.
+- When selecting "Hebrew" as the language the UI is displayed in a right-to-left direction.
+- The "Workspace" card heading & language switcher label change depending on the selected language.
+
 ## Setup
 
 Make sure to install the dependencies:
